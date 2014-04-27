@@ -1,0 +1,26 @@
+[
+	{
+		"id": "host",
+		"type": "text",
+		"label": "VDR Host/IP Adress",
+		"default": ""
+	},
+	{
+		"id": "port",
+		"type": "text",
+		"label": "Streamdev Port",
+		"default": "3000"
+	},
+	{
+		"id": "restapi",
+		"type": "text",
+		"label": "Restfulapi Port",
+		"default": "8002"
+	},
+	{
+		"id": "stream",
+		"type": "text",
+		"label": "Stream type",
+		"default": "TS"
+	}
+]
