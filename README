@@ -1,6 +1,7 @@
 *Plex VDR Live Plugin*
 
-This is a very simple and first version of python plugin for Plex to stream live TV from my VDR to my iOS Devices.
+This is a fork of the already existing bundle from  http://gitlab.iphonedation.com/alex/plex-vdr-live-tv-plugin
+This is a very simple and first version of python plugin for Plex to stream live TV from my VDR to my Samsung Smart TV.
 
 Requirements:
 
@@ -10,7 +11,7 @@ vdr-plugin-restfulapi
 
 Install:
 
-1) copy the .bundle part to your Plex plugin folder. On my system (ubuntu 12.04LTS) it's here:
+1) copy the .bundle part to your Plex plugin folder. On my system (ubuntu 14.04LTS) it's here:
 
 /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
 
@@ -18,13 +19,13 @@ Install:
 
 Examples:
 
-chown -R plex:plex 'VDR Live.bundle'
-chmod +x 'VDR Live.bundle/Content/Code/__init__.py'
+chown -R plex:plex 'plex-vdr-live-samsung-tv-plugin.bundle'
+chmod +x 'plex-vdr-live-samsung-tv-plugin.bundle/Content/Code/__init__.py'
 
 3) Restart Plex
 4) Enjoy the Stream in your Plexclient
 
 Known issues:
 
-* No Streaming under WindowsRT
-* Plex may not release the Streamdev-Client-Slot
+* No DVB subtitles support.
+* Audio stream can't be selected manually.
